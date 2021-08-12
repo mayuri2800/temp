@@ -1,0 +1,14 @@
+<p>nav-bar works!</p>
+<span class="column is-6" style="float: left;">
+    <form>
+        <input type="text" [(ngModel)]="letter" name="letter" placeholder="letter">
+        <button (click)="search()">Search</button>
+    </form>
+<h1>{{letter}}</h1>
+
+    <ul>
+        <li *ngFor="let f of fru">
+                {{f.letter + "\nfor\n" + f.name}}
+        </li>
+    </ul>
+</span>
